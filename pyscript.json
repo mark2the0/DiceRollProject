@@ -1,0 +1,7 @@
+{
+  "_comment" : "This JSON file enables server-side python 'include' statements for the given files. DO NOT EDIT",
+  "name": "DiceRollerWeb",
+  "files": {
+    "./dice.py": "dice.py"
+  }
+}
