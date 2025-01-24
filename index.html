@@ -27,16 +27,17 @@
     <body>
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
+        <h1>Welcome to the dice roller!</h1>
 
 
 
 
 
+        
+        <button type="button" py-click="roll_all_dice">Roll all dice</button>
 
-
-
-
-
+        <div id="roll-history"></div>
+        <button type="button" py-click="clear_history">Clear roll history</button>
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>
     </body>
