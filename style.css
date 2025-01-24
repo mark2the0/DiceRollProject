@@ -7,3 +7,8 @@ p {
     text-align: center;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
+button {
+    align-items: center;
+    text-align: center;
+}
