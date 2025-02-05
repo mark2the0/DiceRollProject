@@ -32,7 +32,13 @@
         <p>Simply select the amount of sides, then roll!</p>
 
         <div id="choose-dice"></div>
-        <button type="menu" py-click="select_dice_faces">Choose dice type</button>
+        <label for="choose-dice">Choose a dice option:</label>
+        <form py-change="select_face_option">
+            <option value="2">coin flip</option>
+            <option value="6">6-sided dice</option>
+            <option value="10">10-sided dice</option>
+            <option value="20">20-sided dice</option>
+        </form>
         
         <div id="dice-roll"></div>
         <button type="button" py-click="roll_all_dice">Roll 'em!</button>
