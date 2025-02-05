@@ -28,8 +28,10 @@
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
 
+        <div class="text">
         <h1>Welcome to the Dice Roller</h1>
         <p>Simply select the amount of sides, then roll!</p>
+        </div>
 
         <div id="choose-dice"></div>
         <select py-change="select_face_option">
@@ -39,13 +41,13 @@
             <option value="21">20-sided die</option>
         </select>
         
-        <div id="dice-roll"></div>
+        <div id="dice-roll" class="buttons"></div>
         <button type="button" py-click="roll_all_dice">Roll 'em!</button>
 
-        <div id="roll-history"></div>
-        <button type="button" py-click="clear_history">Clear roll history</button>
+        <div id="roll-history" class="buttons"></div>
+        <button type="button" py-click="clear_history">Clear</button>
 
-        <div id="images"></div>
+        <div id="images" class="buttons"></div>
         <img src="images/coin.png" height="200px" width="200px">
         <img src="images/dice.png" height="200px" width="200px">
 

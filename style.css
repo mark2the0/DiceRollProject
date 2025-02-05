@@ -2,3 +2,12 @@ body {
     background-color: #8ACE00;
     font-family: Arial, Helvetica, sans-serif; text-transform: lowercase; color: black; width: 90%;
 }
+
+.buttons {
+    display: flex;
+    padding-left: 50%;
+}
+
+.text {
+    text-align: center;
+}
