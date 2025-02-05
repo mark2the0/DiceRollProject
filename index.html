@@ -33,22 +33,24 @@
         <p>Simply select the amount of sides, then roll!</p>
         </div>
 
-        <div class="buttons">
+        <div id="selector">
             <select py-change="select_face_option">
                 <option value="3">coin flip</option>
                 <option value="7">6-sided die</option>
                 <option value="11">10-sided die</option>
                 <option value="21">20-sided die</option>
             </select>
+        </div>
         
+        <div class="buttons">
             <button type="button" py-click="roll_all_dice">Roll 'em!</button>
 
             <button type="button" py-click="clear_history">Clear</button>
         </div>
 
         <div class="images">
-            <img src="images/coin.png">
-            <img src="images/dice.png">
+            <img src="images/coin.png" width="200px" height="200px">
+            <img src="images/dice.png" width="200px" height="200px">
         </div>
 
         <!-- End of your code -->
