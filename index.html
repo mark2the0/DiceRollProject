@@ -28,32 +28,26 @@
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
 
-        <div class="text">
         <h1>Welcome to the Dice Roller</h1>
         <p>Simply select the amount of sides, then roll!</p>
-        </div>
 
-        <div id="selector">
-            <select py-change="select_face_option">
-                <option value="3">coin flip</option>
-                <option value="7">6-sided die</option>
-                <option value="11">10-sided die</option>
-                <option value="21">20-sided die</option>
-            </select>
-        </div>
+        <div id="choose-dice"></div>
+        <select py-change="select_face_option">
+            <option value="3">coin flip</option>
+            <option value="7">6-sided die</option>
+            <option value="11">10-sided die</option>
+            <option value="21">20-sided die</option>
+        </select>
         
-        <div class="buttons">
-            <button type="button" py-click="roll_all_dice">Roll 'em!</button>
-        </div>
+        <div id="dice-roll"></div>
+        <button type="button" py-click="roll_all_dice">Roll 'em!</button>
 
-        <div class="buttons">
-            <button type="button" py-click="clear_history">Clear</button>
-        </div>
+        <div id="roll-history"></div>
+        <button type="button" py-click="clear_history">Clear roll history</button>
 
-        <div class="images">
-            <img src="images/coin.png" width="200px" height="200px">
-            <img src="images/dice.png" width="200px" height="200px">
-        </div>
+        <div id="images"></div>
+        <img src="images/coin.png" height="200px" width="200px">
+        <img src="images/dice.png" height="200px" width="200px">
 
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>
