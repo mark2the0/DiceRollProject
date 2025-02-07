@@ -1,8 +1,24 @@
 body {
-    background-color: #8ACE00;
-    font-family: Arial, Helvetica, sans-serif; text-transform: lowercase; color: black;
+    background-color: #B4DD1E;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
 .buttons {
-    margin: auto; display: inline;
+    margin: auto;
+    display: inline;
+    float: left;
+}
+
+select {
+    display: inline;
+    float: left;
+}
+
+#images {
+    float: right;
+}
+
+#content-box {
+    border: 1px solid black; overflow: hidden;
 }

@@ -29,9 +29,15 @@
         <!-- Start of your code -->
 
         <h1>Welcome to the Dice Roller</h1>
-        <p>Simply select the amount of sides, then roll!</p>
+        <p>Simply select the amount of sides, then roll!<br>It will show the roll history for you as well. You can clear it and start again at any time.</p>
 
-        <div id="choose-dice"></div>
+        <br>
+
+        <label>Type in how many dice to roll: </label>
+        <input type="text" size="5" value="1" id="dice-count"/>
+
+        <br>
+
         <select py-change="select_face_option">
             <option value="3">coin flip</option>
             <option value="7">6-sided die</option>
@@ -41,13 +47,18 @@
         
         <div id="dice-roll"></div>
         <button type="button" py-click="roll_all_dice">Roll 'em!</button>
-
-        <div id="roll-history"></div>
         <button type="button" py-click="clear_history">Clear</button>
 
-        <div id="images"></div>
-        <img src="images/coin.png" height="200px" width="200px">
-        <img src="images/dice.png" height="200px" width="200px">
+        <div id="roll-history"></div>
+
+        <br>
+
+        <div id="content-box">
+            <div id="images">
+                <img src="images/coin.png" height="200px" width="200px"/>
+                <img src="images/dice.png" height="200px" width="200px"/>
+            </div>
+        </div>
 
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>
