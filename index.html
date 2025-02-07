@@ -27,14 +27,22 @@
     <body>
         <dialog id="loading"><h1>Loading python environment...</h1></dialog>
         <!-- Start of your code -->
+        <div id="words">
+            <h1>Welcome to the Dice Roller</h1>
+            <p>Simply select the amount of sides, then roll!<br>It will show the roll history for you as well. You can clear it and start again at any time.</p>
 
-        <h1>Welcome to the Dice Roller</h1>
-        <p>Simply select the amount of sides, then roll!<br>It will show the roll history for you as well. You can clear it and start again at any time.</p>
+            <br>
 
-        <br>
+            <label>Type in how many dice to roll: </label>
+            <input type="text" size="5" value="1" id="dice-count"/>
+        </div>
 
-        <label>Type in how many dice to roll: </label>
-        <input type="text" size="5" value="1" id="dice-count"/>
+        <div id="content-box">
+            <div id="images">
+                <img src="images/coin.png" height="200px" width="200px"/>
+                <img src="images/dice.png" height="200px" width="200px"/>
+            </div>
+        </div>
 
         <br>
 
@@ -45,20 +53,16 @@
             <option value="21">20-sided die</option>
         </select>
         
-        <div id="dice-roll"></div>
-        <button type="button" py-click="roll_all_dice">Roll 'em!</button>
-        <button type="button" py-click="clear_history">Clear</button>
+        <div id="dice-roll">
+            <button type="button" py-click="roll_all_dice">Roll 'em!</button>
+            <button type="button" py-click="clear_history">Clear</button>
+        </div>
 
         <div id="roll-history"></div>
 
         <br>
 
-        <div id="content-box">
-            <div id="images">
-                <img src="images/coin.png" height="200px" width="200px"/>
-                <img src="images/dice.png" height="200px" width="200px"/>
-            </div>
-        </div>
+
 
         <!-- End of your code -->
         <script type="py" src="main.py" config="./pyscript.json"></script>

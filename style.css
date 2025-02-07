@@ -20,5 +20,12 @@ select {
 }
 
 #content-box {
-    border: 1px solid black; overflow: hidden;
+    overflow: hidden;
+    float: right;
+    width: 48%;
+}
+
+#words {
+    float: left;
+    width: 50%;
 }
